@@ -10,25 +10,27 @@ public class Main {
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
-        // Задача 2
 
-        int clientDeviceYear = 2014;
-        if (clientOS == 1) {
-            if (clientDeviceYear >= 2015) {
+
+        // Задача 2
+        int clientOS1 = 0;
+        int clientDeviceYear1 = 2015;
+        if (clientOS1 == 1) {
+            if (clientDeviceYear1 < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
                 System.out.println("Установите версию приложения для Android по ссылке");
-            } else if (clientOS == 0) ;
-            if (clientDeviceYear >= 2015) {
+            }
+        } else {
+            if (clientDeviceYear1 < 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            } else {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
+
         }
-            if (clientOS == 0) {
-            if (clientDeviceYear < 2015) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else if (clientOS == 0) ;
-            if (clientDeviceYear < 2015) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
-        }
+
+
         // Задача 3
         int year = 2022;
         if ((year % 4 == 0) && ((year % 100 != 0) || year % 400 == 0)) {
